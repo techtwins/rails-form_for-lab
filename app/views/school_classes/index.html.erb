@@ -1,0 +1,6 @@
+<h2>School Classes</h2>
+<div>
+  <% @schools.each do |school| %>
+    <div><%= link_to school.school_model, school_class_path(school) %> 
+  <% end %>
+</div>
